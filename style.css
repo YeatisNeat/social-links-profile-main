@@ -22,13 +22,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 1rem;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 .container {
   background-color: var(--Grey-800);
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 12px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,12 +37,66 @@ body {
 }
 
 .profile-img {
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   border-radius: 50px;
   object-fit: cover;
+  margin-bottom: 1.5rem;
 }
 
 .name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-bottom: 4px;
+}
+
+.location {
   font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--Green);
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background-color: var(--Grey-700);
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.button p {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.button:last-child {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2.25rem;
+    max-width: 456px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 384px;
+  }
+}
+
+.button:hover {
+  background-color: var(--Green);
+  cursor: pointer;
+  color: var(--Grey-700);
 }
